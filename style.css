@@ -1,0 +1,17 @@
+.bg-navbar{
+    background-color: brown;
+}
+.carousel-item{
+    max-height: 700px;
+    
+}
+.flex-container{
+    display: flex;
+    background-color: yellow;
+    color: red;
+    justify-content: center;
+    padding: 45px;
+    margin: 60px 400px 60px 400px; 
+    border: solid
+ 
+}
