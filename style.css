@@ -1,17 +1,347 @@
-.bg-navbar{
-    background-color: brown;
+
+
 }
 .carousel-item{
-    max-height: 700px;
+    max-height: 500px;
     
+}
+
+.flex-container{
+    font-size: 2rem;
+    display: flex; 
+    background-color: rgb(221, 241, 39);
+    color: rgb(228, 70, 7);
+    justify-content: center;
+    padding: 20px;
+    margin: 60px 300px 60px 500px; 
+    border-style:dashed
+
+
+ 
+}
+.resaltar{
+    color: brown;
+}
+.enlace{
+    font-size: 2rem;
+    text-align: none;
+}
+.container{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+   
+}
+.card-img{
+    width: 50rem;
+    height: 60rem; 
+  
+   
+
+}
+.footer{
+   
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+   
+    @media screen {
+        max-width: 500px;
+    }
+        
+
+ 
+}
+.uno{
+    grid-column:1/2 ;
+    grid-row:1/2 ;
+    width: 100%;
+    height: 100%;
+}
+.dos{
+    grid-column: 2/3;
+    grid-row:1/2 ;
+    width: 100%;
+    height: 100%;
+}
+.tres{
+    grid-row: 1/2;
+    grid-column:3/4;
+    width: 100%;
+    height: 100%;
+  
+}
+.cuatro{
+    grid-row:2/3 ;
+    grid-column:1/2 ;
+    width: 100%;
+    height: 100%;
+}
+.cinco{
+    grid-row: 2/3;
+    grid-column:2/3 ;
+    width: 100%;
+    height: 100%;
+}
+.seis{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+}
+.list-group{
+   width: 600px;
+   
+   
+}
+.container-fluid{
+    margin-left: 600px;
+   
+  
+}
+.pedidos-online{
+    color: rgb(230, 55, 25);
+    background-color:rgb(235, 70, 70)
+    border: solid;
+    margin: auto;
 }
 .flex-container{
     display: flex;
-    background-color: yellow;
-    color: red;
-    justify-content: center;
-    padding: 45px;
-    margin: 60px 400px 60px 400px; 
-    border: solid
- 
+    flex-direction: column;
 }
+.list-group{
+    margin-left: 600px;
+    margin-top: 60px;
+}
+
+  
+  .encontranos{
+    background-color: rgb(78, 77, 77);
+    margin-top: 20px;
+    color: rgb(255, 214, 80);
+   
+  }
+  footer {
+    background-color: #fcf8f8;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: block; 
+  }
+  
+  .redes-sociales {
+    display: flex; 
+    justify-content: center; 
+  }
+  
+  .redes-sociales a {
+    margin: 0 10px;
+  }
+  
+  .redes-sociales img {
+    width: 40px;
+  }
+  
+ 
+  .main {
+    padding: 50px;
+  }
+
+  .imagen-destacada {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .imagen-destacada img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo{
+    
+  }
+  .descripcion{
+    margin-left: 400px;
+    max-height: 200px;
+    margin-right: 400px;
+  }
+  .navbar{
+    background-color: red;
+  }
+  .carousel-item{
+    max-height: 500px;
+  }
+  .carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+}
+
+.navbar-expand-lg{
+    background-color: brown;
+}
+.menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .menu-title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .menu-list li {
+    margin: 20px;
+  }
+  
+  .menu-list li img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .pizza-info {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .pizza-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .pizza-info p {
+    color: #666;
+  }
+  .pedido-online {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-style:dashed
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pedido-online h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="time"],
+  select {
+    width: calc(100% - 22px); /* Se resta el padding */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button {
+    background-color: #e90e0e;
+  }
+  
+ 
+
+  .promociones {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .promocion {
+    background-color: #ffcc00;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .promocion:hover {
+    transform: translateY(-5px);
+  }
+  
+  .otra {
+    padding: 20px;
+  }
+  
+  .otra h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .otra p {
+    color: #666;
+  }
+  
+  .contenedor{
+    background-color: #c04c4c;
+    color: #fff;
+  }
+  
+  
+  .tarjetas-container {
+    display: flex; /* Usamos flexbox para alinear las tarjetas horizontalmente */
+    justify-content: space-around; /* Esto distribuirá el espacio entre las tarjetas */
+    flex-wrap: wrap; /* Para que las tarjetas se envuelvan si no caben todas en una sola línea */
+  }
+  
+  .tarjeta {
+    width: calc(30% - 40px); /* El ancho de cada tarjeta */
+    background-color: #f9f9f9cc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .tarjeta h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  
+  .tarjeta iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+  }
+ 

@@ -8,64 +8,190 @@
    <link rel="stylesheet" href="style.css">
    <!--BOOTSTRAP-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<!--libreria-->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
 <body>
    <header>
-    
-    <nav class="navbar navbar-expand-sm bg-navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Crazy pizzeria</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">inicio</a>
-            <a class="nav-link" href="/pedidos-online.html">pedidos online</a>
-            <a class="nav-link" href="#">fotos</a>
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-
-          </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <a class="navbar-brand" href="#">CRAZY PIZZA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/fotos.html">Fotos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pedidos-online.html">Pedidos online</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto.html">Contacto</a>
+          </li>
+        </ul>
       </div>
     </nav>
+
+          
+    
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img-pizzas/Homemade Pepperoni Pizza [1_75 Hours] - Chasety.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/img-pizzas/53ffe39c-1cb6-41f0-9c8f-de7664ab0036.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/img-pizzas/55.jpg" class="d-block w-100" alt="...">
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    
 
    
     
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/img-pizzas/Homemade Pepperoni Pizza [1_75 Hours] - Chasety.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/img-pizzas/Mushrooms, pizza de cogumelos.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/img-pizzas/ac325495-2f33-448e-9391-8c32f804e3ad.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      
     </header>
-    <main>
-    <div class="flex-container">
-      <p>¡Hacé tu pedido online!</p>
+
+   
+    <div class="flex-container text-center  animate__animated animate__rubberBand col-12 col-md-6 ">
+     
+      <h2>¡Hacé tu pedido online!</h2>
+    
     </div>
-     <div>
-      <h1> SOMOS  <span class="resaltar"> CRAZY PIZZA </span> </h1>
+     <div class="titulo">
+      <h1 class="text-lg-center"> SOMOS  <span class="resaltar">CRAZY PIZZA</span> </h1>
      </div>
+     <div class="descripcion">
+      <h3 class=" text-lg-start ">Luego de un largo camino recorrido por los barrios Manhattan, Brooklyn y el Soho de New York recreamos el estilo clásico de las pizzas más reconocidas de la gran manzana.
+        Con una impronta<span class="resaltar"> urbana </span> de <span class="resaltar">street art</span> en la ambientación,<span class="resaltar"> música funk y hip hop</span> para completar una experiencia americana genuina y crazy.
+      </h3>
+     </div>
+    
+      </div>
+    </div>
+    
+
+
+
+    <main class="menu-container ">
+      <h1 class="menu-title">Recomendaciones Crazy</h1>
+      <ul class="menu-list">
+        <li>
+          <img src="/img-pizzas/Neapolitan Pizza Dough.jpg" alt="Pizza Margarita">
+          <div class="pizza-info">
+            <h2>Pizza Margarita</h2>
+            <p>Tomate, mozzarella, albahaca.</p>
+          </div>
+        </li>
+        <li>
+          <img src="/img-pizzas/pepe.jpg" alt="Pizza Pepperoni">
+          <div class="pizza-info">
+            <h2>Pizza Pepperoni</h2>
+            <p>Tomate, mozzarella, pepperoni.</p>
+          </div>
+        </li>
+        <li>
+          <img src="/img-pizzas/hawaiana.jpg" alt="Pizza Hawaiana">
+          <div class="pizza-info">
+            <h2>Pizza Hawaiana</h2>
+            <p>Tomate, mozzarella, jamón, piña.</p>
+          </div>
+        </li>
+      </ul>
+
+      
+      
+      
+
+
+
+  <section class="promociones">
+    <h2>Promociones y Ofertas Especiales</h2>
+    <div class="promocion">
+      <div class="otra  col-sm-12 col-md-12 col-lg-6">
+        <h3>¡Oferta de la Semana!</h3>
+        <p>Compra una pizza grande y recibe un 20% de descuento en tu segunda pizza.</p>
+      </div>
+    </div>
+    <div class="promocion">
+      <div class="otra col-sm-12 col-md-12 col-lg-6">
+        <h3>¡Happy Hour!</h3>
+        <p>De lunes a viernes, de 5pm a 7pm, todas las pizzas tienen un 2x1 en local.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="container-fluid  contenedor text-center">
+<h3>Encontranos en:</h3>
+</div>
+
+<div class="tarjetas-container">
+  <div class="tarjeta col-sm-12 col-md-6 col-lg-3">
+    <h2>Paris</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.812203273682!2d2.3522223147704207!3d48.856614522678886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1647832073244!5m2!1sen!2sfr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="tarjeta  col-sm-12 col-md-6 col-lg-3">
+    <h2>San José</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.945006453184!2d-122.08388048468273!3d37.42199947982454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580ae43b194db%3A0x9abf3e6a7d7bde!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1647832217303!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="tarjeta col-sm-12 col-md-6 col-lg-3">
+    <h2>Londres</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248727.7823234592!2d-0.2416813467289928!3d51.52873520081312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605e39dbda6df%3A0x52963a5addd52a99!2sLondon%20Eye!5e0!3m2!1sen!2suk!4v1647832276162!5m2!1sen!2suk" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</div>
+
+       
+
+       
+   
+    
+
+
+
+
+    
+
+
 
           
         
-   </header>
+
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+   
+   
+   <footer>
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com/" target="_blank"><img src="/img-pizzas/facebook.jpg" alt="Facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="/img-pizzas/instagram.jpg" alt="Instagram"></a>
+      <a href="https://api.whatsapp.com/send?phone=NUMERO_DE_TELEFONO" target="_blank"><img src="/img-pizzas/Logo WhatsApp – Logos PNG.jpg" alt="WhatsApp"></a>
+    </div>
+  </footer>
+  <footer class="bg-danger text-white text-center py-4 ">
+    <p class="mb-0">&copy; 2024 Crazy pizza. Todos los derechos reservados.</p>
+  </footer>
+  
 </body>
 </html>
