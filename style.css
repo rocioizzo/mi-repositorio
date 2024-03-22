@@ -1,6 +1,6 @@
 
 
-}
+
 .carousel-item{
     max-height: 500px;
     
@@ -256,7 +256,7 @@
   input[type="text"],
   input[type="time"],
   select {
-    width: calc(100% - 22px); /* Se resta el padding */
+    width: calc(100% - 22px); 
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -319,13 +319,13 @@
   
   
   .tarjetas-container {
-    display: flex; /* Usamos flexbox para alinear las tarjetas horizontalmente */
-    justify-content: space-around; /* Esto distribuirá el espacio entre las tarjetas */
-    flex-wrap: wrap; /* Para que las tarjetas se envuelvan si no caben todas en una sola línea */
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
   }
   
   .tarjeta {
-    width: calc(30% - 40px); /* El ancho de cada tarjeta */
+    width: calc(30% - 40px); 
     background-color: #f9f9f9cc;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
