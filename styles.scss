@@ -1,246 +1,59 @@
-/*variables*/
+// Colores
+$color-primary: red;
+$color-secondary: brown;
+
+// Tamaños
+$size-small: 10px;
+$size-medium: 20px;
+$size-large: 30px;
+
+
+$border-style: dashed;
+                              
+@import 'variables';
+
 .carousel-item {
     max-height: 500px;
 }
 
 .flex-container {
-    font-size: 2rem;
+    font-size: $size-medium;
     display: flex;
-    background-color: rgb(221, 241, 39);
-    color: rgb(228, 70, 7);
+    background-color: $color-primary;
+    color: $color-secondary;
     justify-content: center;
-    padding: 20px;
-    margin: 60px 300px 60px 500px;
-    border-style: dashed;
+    padding: $size-medium;
+    margin: $size-large $size-large $size-large $size-medium;
+    border-style: $border-style;
 
     &.resaltar {
         color: brown;
     }
 
     &.enlace {
-        font-size: 2rem;
+        font-size: $size-medium;
         text-align: none;
     }
 }
 
 .container {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
+    width: $size-medium;
+    height: $size-medium;
+    margin-bottom: $size-small;
 }
-
-.card-img {
-    width: 50rem;
-    height: 60rem;
-}
-
-.footer {
-    background-color: #fcf8f8;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    display: block;
-
-    .redes-sociales {
-        display: flex;
-        justify-content: center;
-
-        a {
-            margin: 0 10px;
-        }
-
-        img {
-            width: 40px;}
-    }
-}
-
-.main {
-    padding: 50px;
-
-    .imagen-destacada {
-        text-align: center;
-        margin-bottom: 30px;
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-}
-
-.titulo {}
-
-.descripcion {
-    margin-left: 400px;
-    max-height: 200px;
-    margin-right: 400px;
-}
+ 
+@import 'variables';
 
 .navbar {
-    background-color: red;
+    background-color: $color-primary;
 
     &.navbar-expand-lg {
         background-color: brown;
     }
 }
+@import 'variables';
+@import 'base';
+@import 'navbar';
 
-.menu-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    text-align: center;
 
-    .menu-title {
-        font-size: 2rem;
-        color: #333;
-    }
 
-    .menu-list {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        li {
-            margin: 20px;
-        }
-
-        li img {
-            width: 300px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        }
-    }
-
-    .pizza-info {
-        margin-top: 10px;
-        text-align: center;
-
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 5px;
-        }
-
-        p {
-            color: #666;
-        }
-    }
-}
-
-.pedido-online {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-style: dashed;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-
-    h2 {
-        text-align: center;
-    }
-
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    label {
-        display: block;
-        font-weight: bold;
-    }
-
-    input[type="text"],
-    input[type="time"],
-    select {
-        width: calc(100% - 22px);
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-
-    button {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        background-color: #333;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-
-        &:hover {
-            background-color: #e90e0e;
-        }
-    }
-}
-
-.promociones {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-
-    .promocion {
-        background-color: #ffcc00;
-        border-radius: 10px;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-        margin-bottom: 20px;
-        transition: transform 0.3s ease-in-out;
-
-        &:hover {
-            transform: translateY(-5px);
-        }
-    }
-
-    .otra {
-        padding: 20px;
-
-        h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-    }
-}
-
-.contenedor {
-    background-color: #c04c4c;
-    color: #fff;
-}
-
-.tarjetas-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-    .tarjeta {
-        width: calc(30% - 40px);
-        background-color: #f9f9f9cc;
-        border-radius: 8px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 20px;
-
-        h2 {
-            font-size: 1.2em;
-            text-align: center;
-            margin-top: 0;
-            padding-top: 20px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 200px;
-            border: none;
-        }
-    }
-}
